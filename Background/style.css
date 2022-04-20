@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: url(./imges/image168-16.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.creat {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  -webkit-box-shadow: 0 25px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 25px 25px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  -webkit-transition: 1s;
+  transition: 1s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.creat:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.creat::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: #7729ee;
+}
+
+.creat .counter {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.1);
+          box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.creat .content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: -80px;
+}
+
+.creat .content .counter img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=style.css.map */

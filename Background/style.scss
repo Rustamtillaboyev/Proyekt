@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: url(./imges/image168-16.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.creat
+{
+    position: relative;
+    width: 800px;
+    height: 500px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 20px;
+    box-shadow: 0 25px 25px rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    transition: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.creat:hover{
+    transform: scale(1.2);
+    background: rgba(255,255,255,0.2);
+}
+.creat::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: #7729ee;
+}
+.creat .counter{
+    position: relative;
+    width: 120px;
+    height: 120px;
+    overflow: hidden ;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px rgba(255,255,255,0.1);
+}
+.creat .content{
+    position: relative;
+    display: flex;
+    margin-top: -80px;
+
+}
+.creat .content .counter img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+
+}
